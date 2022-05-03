@@ -1,16 +1,93 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+@font-face {
+  font-family: "Creattion";
+  src: local("Creattion"),
+    url("./fonts/creattion.otf") format("truetype");
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.font-creattion {
+  font-family: 'Creattion';
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.c-title {
+  color: #4D504A;
+}
+
+#hero-banner {
+  min-height: 78vh;
+}
+
+#date {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #F4E2CE;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+#date span {
+  background: #FFF1E2;
+  padding: 0 10px;
+}
+
+#countDown {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#countDown div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-right: 10px;
+}
+
+#countDown span {
+  margin: 0 2px;
+  background-color: #A10023;
+  font-size: 32px;
+  line-height: 38px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  perspective: 3.2em;
+  font-weight: 700;
+  min-width: 1.125em;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.bg-body {
+  background-color: #FFF1E2;
+}
+
+.bg-acent {
+  background-color: #A10023;
+}
+
+
+#dresscode {
+  background-color: #FFFFFF;
+  background-image: url(https://invitemespecial.com/Nuestraboda/wp-content/uploads/2021/11/dresscode2.jpg);
+  background-position-y: 165%;
+  background-repeat: no-repeat;
+  background-size: 54% auto;
 }
