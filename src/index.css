@@ -58,7 +58,7 @@
 
 #countDown span {
   margin: 0 2px;
-  background-color: #A10023;
+  background-color: #450110;
   font-size: 32px;
   line-height: 38px;
   padding: 5px 7px;
@@ -85,9 +85,13 @@
 
 
 #dresscode {
-  background-color: #FFFFFF;
-  background-image: url(https://invitemespecial.com/Nuestraboda/wp-content/uploads/2021/11/dresscode2.jpg);
+  background-color: #fff;
+  background-image: url('./assets/dresscode2.jpg');
   background-position-y: 165%;
   background-repeat: no-repeat;
   background-size: 54% auto;
+}
+
+.bg-inv{
+  background-color: #f4e2ca;
 }
